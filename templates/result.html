@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .video-player {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay playsinline controls class="video-player" volume="0.5" oncanplay="this.requestFullscreen()">
+            <source src={{ result }} type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>
